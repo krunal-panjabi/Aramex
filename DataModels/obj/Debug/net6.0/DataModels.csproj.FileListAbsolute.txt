@@ -1,0 +1,14 @@
+D:\Tasks\Aramex\DataModels\bin\Debug\net6.0\DataModels.deps.json
+D:\Tasks\Aramex\DataModels\bin\Debug\net6.0\DataModels.dll
+D:\Tasks\Aramex\DataModels\bin\Debug\net6.0\DataModels.pdb
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.csproj.AssemblyReference.cache
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.AssemblyInfoInputs.cache
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.AssemblyInfo.cs
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.csproj.CoreCompileInputs.cache
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.dll
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\refint\DataModels.dll
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.pdb
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\ref\DataModels.dll
+D:\Tasks\Aramex\DataModels\bin\Debug\net6.0\DataModels.runtimeconfig.json
+D:\Tasks\Aramex\DataModels\obj\Debug\net6.0\DataModels.genruntimeconfig.cache

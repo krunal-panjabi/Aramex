@@ -1,6 +1,7 @@
-﻿using AramexApi.Data;
-using AramexApi.Models;
+﻿
+using DataModels.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Repository.Interface;
 
 namespace AramexApi.Controllers
 {
@@ -8,18 +9,18 @@ namespace AramexApi.Controllers
     [Route ("api/[controller]/[action]")]
     public class UserController : ControllerBase
     {
-        private readonly AramexContext dbContext;
-
-        public UserController(AramexContext dbContext)
+        private readonly IUser _userrepository;
+        public UserController(IUser userrepository)
         {
-            this.dbContext = dbContext;
+           
+            this._userrepository = userrepository;
         }
 
         [HttpGet]
         public IActionResult GetUsers() {
 
-
-            return Ok(dbContext.Users.ToList());
+            return null;
+          /*  return Ok(dbContext.Users.ToList());*/
            
         }
 
@@ -32,42 +33,62 @@ namespace AramexApi.Controllers
             }
             else
             {
-                var userpassword = dbContext.Users.FirstOrDefault(u => u.Password == model.Password && u.Email==model.Email.ToLower());
+                var response = _userrepository.Login(model);
+                if(response== null)
+                {
+                    return BadRequest();
+                }
+                else
+                {
+                    return Ok(response);
+                }
+              /*  var userpassword = dbContext.Users.FirstOrDefault(u => u.Password == model.Password && u.Email==model.Email.ToLower());
                 if (userpassword != null) {
                     return Ok(userpassword);
                 }
                 else
                 {
                     return BadRequest();
-                }
+                }*/
 
             }
-            return Ok();
+         
                 
         }
 
         [HttpPost]
-        public IActionResult AddUsers(Registration adduser)
+        public IActionResult AddUsers(Registration model)
         {
-           if( dbContext.Users.Any(u => u.Email == adduser.Email))
+            var register = _userrepository.Register(model);
+
+            if (register == null)
             {
                 return BadRequest();
             }
-            else { 
-                
-              var  user = new User
+            else
             {
+                return Ok(register);
+            }
+            /* if( dbContext.Users.Any(u => u.Email == adduser.Email))
+              {
+                  return BadRequest();
+              }
+              else { 
 
-                UserName = adduser.UserName,
-                Password = adduser.Password,
-                Email = adduser.Email,
-            };
+                var  user = new User
+              {
+
+                  UserName = adduser.UserName,
+                  Password = adduser.Password,
+                  Email = adduser.Email,
+              };
 
 
-            dbContext.Users.Add(user);
-            dbContext.SaveChanges();
-            return Ok(user);
-                }
+              dbContext.Users.Add(user);
+              dbContext.SaveChanges();
+              return Ok(user);
+                  }*/
+            
         }
 
     }

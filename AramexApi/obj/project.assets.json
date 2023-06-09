@@ -1258,6 +1258,32 @@
             "rid": "win"
           }
         }
+      },
+      "DataModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/DataModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataModels.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DataModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -3733,14 +3759,26 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DataModels/1.0.0": {
+      "type": "project",
+      "path": "../DataModels/DataModels.csproj",
+      "msbuildProject": "../DataModels/DataModels.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DataModels >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.InMemory >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
+      "Repository >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3779,7 +3817,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Tasks\\Aramex\\DataModels\\DataModels.csproj": {
+              "projectPath": "D:\\Tasks\\Aramex\\DataModels\\DataModels.csproj"
+            },
+            "D:\\Tasks\\Aramex\\Repository\\Repository.csproj": {
+              "projectPath": "D:\\Tasks\\Aramex\\Repository\\Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

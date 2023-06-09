@@ -1,0 +1,15 @@
+D:\Tasks\Aramex\Repository\bin\Debug\net6.0\Repository.deps.json
+D:\Tasks\Aramex\Repository\bin\Debug\net6.0\Repository.dll
+D:\Tasks\Aramex\Repository\bin\Debug\net6.0\Repository.pdb
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.dll
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\refint\Repository.dll
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.pdb
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\ref\Repository.dll
+D:\Tasks\Aramex\Repository\bin\Debug\net6.0\DataModels.dll
+D:\Tasks\Aramex\Repository\bin\Debug\net6.0\DataModels.pdb
+D:\Tasks\Aramex\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
