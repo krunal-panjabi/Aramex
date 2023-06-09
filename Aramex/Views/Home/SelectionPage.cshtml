@@ -1,0 +1,293 @@
+﻿<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="~/css/Index.css">
+
+<body>
+
+
+    <!-- toggle starts -->
+
+    <div id="mySidebar" class="sidebar">
+        <div class="toggle-nav" style="">
+            <p style="" class="m-0 aramex-title">
+                Aramex Corporate
+            </p>
+            <a href="javascript:void(0)" style="padding: 0px;" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+
+        <select name=" Ship & Tracks" class="" id=""
+                style="width: 100%;background: transparent;color: grey; border: 0px;    ">
+            <option value=""> Ship & Tracks</option>
+
+        </select><select name="Solution & Product" class="" id=""
+                         style="width: 100%;background: transparent;color: grey; border: 0px;    ">
+            <option value="">Solution & Product</option>
+
+        </select><select name=" Contact & Support" class="" id=""
+                         style="width: 100%;background: transparent;color: grey; border: 0px;    ">
+            <option value="">Contact & Support</option>
+
+        </select>
+        <select name="country" class="" id="" style="width: 100%;background: transparent;color: grey; border: 0px;    ">
+            <option value="">India</option>
+            <option value="">country 2</option>
+            <option value="">country 3</option>
+            <option value="">country 4</option>
+        </select>
+        <select name="Language" id="" style="width: 100%;background: transparent;color: grey; border: 0px;">
+            <option value="">English</option>
+            <option value="">Language 2</option>
+            <option value="">Language 3</option>
+            <option value="">Language 4</option>
+        </select>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+
+    <!-- toggle ends -->
+
+
+    <div class="container-fluid row firstNav" style="">
+        <div class="col-12 col-lg-8 top "
+             style=" display: flex;justify-content: end; align-items: center;">
+            <p class="m-0">Aramex Corporate </p>
+        </div>
+
+
+        <div class="col-3 col-lg-1 firstNav " style="display: flex;">
+            <select name="country" class="dropdown" id="" style=" ">
+                <option value="">India</option>
+                <option value="">country 2</option>
+                <option value="">country 3</option>
+                <option value="">country 4</option>
+            </select>
+        </div>
+
+        <div class="col-3 col-lg-1 firstNav" style="display: flex;">
+            <select name="Language" class="dropdown" id="" style="">
+                <option value="">English</option>
+                <option value="">Language 2</option>
+                <option value="">Language 3</option>
+                <option value="">Language 4</option>
+            </select>
+        </div>
+
+        <div class="col-2 col-lg-2 firstNav "
+             style="display: flex;align-items: center;margin-left: 25px;width: 13%;">
+            <i class="bi bi-search ms-lg-0 ms-md-3"></i>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid row secondNav" style="background-color: #dc291e; height: 80px;margin: 0px; ">
+
+        <div class="col secondnav">
+            <div class="secondNav" style=" color: white;">
+                <h1 class="mb-0">aramex</h1>
+                <p>delivery unlimited</p>
+            </div>
+
+        </div>
+
+        <div class="col-4 secondNav links " style="">
+
+            <p> <a asp-action="dashboard" asp-controller="Home"> Ship & Tracks </a> </p>
+            <p> <a href=""> Solution & Product </a></p>
+            <p> <a href=""> Contact & Support </a></p>
+        </div>
+        <div class="col-2 secondNav d-none" style="align-items: center;display: flex;">
+            <button class="btn login">Log In</button>
+        </div>
+
+    </div>
+
+    <div class="container-fluid" style=" height: 700px;">
+
+        <div class="row page" style="">
+            <div class="col-7 px-0" style="background-color: #f7f7f7;  height: 585px;">
+                <div class="page-top"
+                     style="">
+                    <div class="lockIcon mt-4">
+                        <i class="bi bi-shield-lock" id="bi-shield-lock"
+                           style="color: white; height: 20px;font-size: 25px;height: 34px;"></i>
+                    </div>
+
+                    <p class="mt-2">Select Options</p>
+                </div>
+                <div class="container mb-4">
+                    <form class="mt-5 ">
+                        <div class="mb-3">
+                            <label for="branch" class="form-label">
+                                <p class="formInput">Select Branch <span style="color: red;">*</span></p>
+                            </label>
+                            <br>
+
+                            <select class="data" name="" id="" style="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Route" class="form-label">
+                                <p class="formInput">Select Route <span style="color: red;">*</span></p>
+                            </label>
+                            <br>
+
+                            <select class="data" name="" id="" style="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Vehicle" class="form-label">
+                                <p class="formInput">Select Vehicle <span style="color: red;">*</span></p>
+                            </label>
+                            <br>
+                            <select class="data" name="" id="" style="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+
+                        </div>
+
+
+                        <button type="submit" class="btn"
+                                style="background-color: #dc291e;color: white;border-radius: 7px; margin-top: 30px;    width: 200px;">
+                            Submit
+                        </button>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div style="">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="footer-col">
+                            <h4>Corporate</h4>
+                            <ul>
+                                <li><a href="#">Investor relations</a></li>
+                                <li><a href="#">Delivering Good</a></li>
+                                <li><a href="#">Franchise </a></li>
+                                <li><a href="#">Certification</a></li>
+                                <li><a href="#">MyUS</a></li>
+                                <li><a href="#">About Aramex</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Fraud Prevention</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">SDK Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Connect</h4>
+                            <ul>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Aramexpress</a></li>
+                                <li><a href="#">Blogistics</a></li>
+                                <li><a href="#">Help And Support Center</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Developers Center</h4>
+                            <ul>
+                                <li><a href="#">Aramex APIs</a></li>
+                                <li><a href="#">E-Commerce Platforms</a></li>
+                                <li><a href="#">Aramex.Com Platforms</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="footer-col footerfix">
+                            <div class="position-absolute">
+                                <input class="form-control mr-sm-2 border-0"
+                                       style="background-color: #333333;  width: 90%;" type="search" placeholder="Search"
+                                       aria-label="Search">
+                                <span class="position-relative text-white"
+                                      style="bottom: 30px; float: right; right: 12%;"><i class="bi bi-search"></i></span>
+                            </div>
+
+                            <div>
+                                <div class="d-flex position-absolute gap-3 mt-5" style="width: 90%;">
+                                    <span class="text-white"><i class="bi bi-facebook"></i></span>
+                                    <span class="text-white"><i class="bi bi-twitter"></i></span>
+                                    <span class="text-white"><i class="bi bi-instagram"></i></span>
+                                    <span class="text-white"><i class="bi bi-linkedin"></i></span>
+                                    <span class="text-white"><i class="bi bi-youtube"></i></span>
+                                    <!-- <span class="text-white"><i class="bi bi-tiktok"></i></span> -->
+
+                                </div>
+                                <p style="color: grey;position: relative;top: 75px;width: auto;">
+                                    ©Aramex 2023.All
+                                    Rights Reserved.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $("#bi-shield-lock").mouseenter(function () {
+                $("#bi-shield-lock").removeClass("bi-shield-lock").addClass("bi-lock")
+            })
+
+            $("#bi-shield-lock").mouseleave(function () {
+                $("#bi-shield-lock").removeClass("bi-lock").addClass("bi-shield-lock")
+            })
+
+        })
+
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
