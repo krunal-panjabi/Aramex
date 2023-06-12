@@ -33,12 +33,16 @@ namespace Aramex.Controllers
             return View();
         }
 
+        //[Authorize]
+        //public IActionResult dashboard()
+        //{
+        //    return View();
+        //}
         [Authorize]
-        public IActionResult dashboard()
+        public IActionResult ShipTrack()
         {
             return View();
         }
-
 
         [Authorize]
         [HttpGet]

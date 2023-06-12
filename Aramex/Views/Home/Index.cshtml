@@ -115,7 +115,7 @@
 
         <div class="col-4 secondNav links " style="">
 
-            <p> <a type="button" asp-action="dashboard" asp-controller="Home"> Ship & Tracks </a> </p>
+            <p> <a type="button" asp-action="ShipTrack" asp-controller="Home"> Ship & Tracks </a> </p>
             <p> <a href=""> Solution & Product </a></p>
             <p> <a href=""> Contact & Support </a></p>
         </div>
@@ -305,82 +305,82 @@
 
 
 
-        $(document).ready(function () {
+        //$(document).ready(function () {
 
-            $("#bi-shield-lock").mouseenter(function () {
-                $("#bi-shield-lock").removeClass("bi-shield-lock").addClass("bi-lock")
-            })
+        //    $("#bi-shield-lock").mouseenter(function () {
+        //        $("#bi-shield-lock").removeClass("bi-shield-lock").addClass("bi-lock")
+        //    })
 
-            $("#bi-shield-lock").mouseleave(function () {
-                $("#bi-shield-lock").removeClass("bi-lock").addClass("bi-shield-lock")
-            })
-
-
-
-
-            $('#myform').submit(function (e) {
-                e.preventDefault(); // Prevent form submission
-
-                // Clear previous error messages
-
-
-                // Perform form validation
-                var valid = true;
-
-                // Validate Name
-                var email = $('#exampleInputEmail1').val();
-                console.log(email);
-                if (email === '') {
-                    console.log("xsda");
-
-                    $("#emailerror").css("display", "inline");
-                    valid = false;
-                }
-
-                var password = $('#exampleInputPassword1').val();
-                if (password === '') {
-
-
-                    $("#passworderror").css("display", "inline");
-                    valid = false;
-                }
-
-                var email = $('#exampleInputEmail1').val();
-                var emailRegex = /^[A-Z0-9._%+-]+@@[A-Za-z0-9.-]+\.[A-Z]{2,}$/i;
-
-                if (emailRegex.test(email)) {
-                    // Valid email address
-                    $('#errorMessage').text('');
-                    // Perform further actions here, such as form submission
-                }
-
-                else if (email === '') {
-                    $("#emailerrorr").css("display", "none")
-                }
-
-                else {
-                    // Invalid email address
-                    $("#emailerror").css("display", "none");
-                    $("#emailerrorr").css("display", "inline");
-                    valid = false;
-                }
-
-                // Validate Email
-                //var email = $('#email').val();
-                //if (email === '') {
-                //    $('#emailError').text('Email is required');
-                //    valid = false;
-                //}
-
-                // If form is valid, submit it
-                if (valid) {
-                    this.submit();
-                }
-            });
+        //    $("#bi-shield-lock").mouseleave(function () {
+        //        $("#bi-shield-lock").removeClass("bi-lock").addClass("bi-shield-lock")
+        //    })
 
 
 
-        })
+
+        //    $('#myform').submit(function (e) {
+        //        e.preventDefault(); // Prevent form submission
+
+        //        // Clear previous error messages
+
+
+        //        // Perform form validation
+        //        var valid = true;
+
+        //        // Validate Name
+        //        var email = $('#exampleInputEmail1').val();
+        //        console.log(email);
+        //        if (email === '') {
+        //            console.log("xsda");
+
+        //            $("#emailerror").css("display", "inline");
+        //            valid = false;
+        //        }
+
+        //        var password = $('#exampleInputPassword1').val();
+        //        if (password === '') {
+
+
+        //            $("#passworderror").css("display", "inline");
+        //            valid = false;
+        //        }
+
+        //        var email = $('#exampleInputEmail1').val();
+        //        var emailRegex = /^[A-Z0-9._%+-]+@@[A-Za-z0-9.-]+\.[A-Z]{2,}$/i;
+
+        //        if (emailRegex.test(email)) {
+        //            // Valid email address
+        //            $('#errorMessage').text('');
+        //            // Perform further actions here, such as form submission
+        //        }
+
+        //        else if (email === '') {
+        //            $("#emailerrorr").css("display", "none")
+        //        }
+
+        //        else {
+        //            // Invalid email address
+        //            $("#emailerror").css("display", "none");
+        //            $("#emailerrorr").css("display", "inline");
+        //            valid = false;
+        //        }
+
+        //        // Validate Email
+        //        //var email = $('#email').val();
+        //        //if (email === '') {
+        //        //    $('#emailError').text('Email is required');
+        //        //    valid = false;
+        //        //}
+
+        //        // If form is valid, submit it
+        //        if (valid) {
+        //            this.submit();
+        //        }
+        //    });
+
+
+
+        //})
 
         /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
         function openNav() {

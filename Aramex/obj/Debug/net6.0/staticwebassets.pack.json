@@ -9,12 +9,32 @@
       "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
+      "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\css\\ShipTrack.css",
+      "PackagePath": "staticwebassets\\css\\ShipTrack.css"
+    },
+    {
       "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\images\\pic1.PNG",
+      "PackagePath": "staticwebassets\\images\\pic1.PNG"
+    },
+    {
+      "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\images\\pic2.PNG",
+      "PackagePath": "staticwebassets\\images\\pic2.PNG"
+    },
+    {
+      "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\images\\pic3.PNG",
+      "PackagePath": "staticwebassets\\images\\pic3.PNG"
+    },
+    {
+      "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\images\\plane.png",
+      "PackagePath": "staticwebassets\\images\\plane.png"
     },
     {
       "Id": "D:\\Tasks\\Aramex\\Aramex\\wwwroot\\js\\site.js",
